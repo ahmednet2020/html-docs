@@ -1,0 +1,28 @@
+@charset "UTF-8";
+//templet name: documentation
+//version: 1.0
+//author: ahmed net
+//dirction page
+$dir:ltr;
+//module
+@import 'sass/components/_var';
+@import 'sass/components/_mixin';
+@import 'sass/components/_normalize';
+@import 'sass/components/_reset';
+@import 'sass/components/_typography';
+//module
+@import 'sass/module/_module';
+//color
+@import 'sass/color/_color';
+//layout
+@import 'sass/layout/_nav';
+@import 'sass/layout/_section';
+@import 'sass/layout/_footer';
+//form
+@import 'sass/form/_button';
+@import 'sass/form/_form';
+//media
+@import 'sass/media/_media';
+
+
+

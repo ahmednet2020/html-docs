@@ -1,0 +1,58 @@
+.nav
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding:1em 0;
+    @extend %bgblack;
+    &:after
+      {
+        content:'';
+        display:block;
+        clear:both;
+      }
+    @at-root .list
+    {
+      list-style: none;
+      text-align: center;
+      @extend %textwhite;
+      text-transform: capitalize;
+      text-align: center;
+      .item-list
+      {
+        display:inline-block;
+        padding:0.5em;
+        font-size: 1.2em;
+        &.active
+        {
+          @extend %textblue;
+        }
+      }
+    }
+}
+.dropmanu
+{
+    position: relative;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    padding-top: 5%;
+    cursor: pointer;
+    .drop-item
+    {
+      position:absolute;
+      top: auto;
+      overflow: hidden;
+      left: 0;
+      right: 0;
+      display:none;
+      @extend %textwhite;
+      padding-top:0.5em;
+      li
+      {
+        padding:0.5em;
+        @extend %bgblue;
+      }
+    }
+}

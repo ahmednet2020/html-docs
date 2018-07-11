@@ -1,0 +1,14 @@
+.article
+{
+	padding: 2em 0;
+    overflow: hidden;
+}
+$map: (green, blue, red);
+.section
+{
+    height: 500px;
+    padding:1em 0;
+    text-indent: 2em;
+    background:nth($map,2);
+    font-size:index($map,blue)px;
+}
